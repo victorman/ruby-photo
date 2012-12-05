@@ -1,0 +1,833 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-12-04 21:42:26 -0800
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (55ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (408.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (355.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.7ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreatePhotos (20121205060253)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205060253')[0m
+  [1m[35m (417.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (435.9ms)[0m  DROP TABLE "photos"
+  [1m[36m (358.5ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20121205060253'[0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (420.9ms)[0m  [1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (410.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121205060253')
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "photos"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (1, 'train.jpg', 'train_t.jpg', 'my ride to work', '2012-12-05 06:15:10', '2012-12-05 06:15:10')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (2, 'lighthouse.jpg', 'lighthouse_t.jpg', 'I take dates here all the time', '2012-12-05 06:15:10', '2012-12-05 06:15:10')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (3, 'gargoyle.jpg', 'gargoyle_t.jpg', 'My paper weight', '2012-12-05 06:15:10', '2012-12-05 06:15:10')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (4, 'cat.jpg', 'cat_t.jpg', 'my pet', '2012-12-05 06:15:10', '2012-12-05 06:15:10')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (5, 'cappucino.jpg', 'cappfcino_t.jpg', 'life juice', '2012-12-05 06:15:10', '2012-12-05 06:15:10')[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (6, 'building.jpg', 'building_t.jpg', 'my office', '2012-12-05 06:15:10', '2012-12-05 06:15:10')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (7, 'bridge.jpg', 'bridge_t.jpg', 'a place i''d like to visit', '2012-12-05 06:15:10', '2012-12-05 06:15:10')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (8, 'bear.jpg', 'bear_t.jpg', 'day at the zoo', '2012-12-05 06:15:10', '2012-12-05 06:15:10')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (9, 'baskets.jpg', 'baskets_t.jpg', 'where i store my fruit', '2012-12-05 06:15:10', '2012-12-05 06:15:10')[0m
+  [1m[35m (339.9ms)[0m  commit transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (397.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (332.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreatePhotos (20121205060253)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205060253')[0m
+  [1m[35m (418.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "photos"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (1, 'train.jpg', 'train_t.jpg', 'my ride to work', '2012-12-05 06:20:25', '2012-12-05 06:20:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (2, 'lighthouse.jpg', 'lighthouse_t.jpg', 'I take dates here all the time', '2012-12-05 06:20:25', '2012-12-05 06:20:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (3, 'gargoyle.jpg', 'gargoyle_t.jpg', 'My paper weight', '2012-12-05 06:20:25', '2012-12-05 06:20:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (4, 'cat.jpg', 'cat_t.jpg', 'my pet', '2012-12-05 06:20:25', '2012-12-05 06:20:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (5, 'cappucino.jpg', 'cappfcino_t.jpg', 'life juice', '2012-12-05 06:20:25', '2012-12-05 06:20:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (6, 'building.jpg', 'building_t.jpg', 'my office', '2012-12-05 06:20:25', '2012-12-05 06:20:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (7, 'bridge.jpg', 'bridge_t.jpg', 'a place i''d like to visit', '2012-12-05 06:20:25', '2012-12-05 06:20:25')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (8, 'bear.jpg', 'bear_t.jpg', 'day at the zoo', '2012-12-05 06:20:25', '2012-12-05 06:20:25')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (9, 'baskets.jpg', 'baskets_t.jpg', 'where i store my fruit', '2012-12-05 06:20:25', '2012-12-05 06:20:25')
+  [1m[36m (271.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/photos" for 127.0.0.1 at 2012-12-04 22:21:27 -0800
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos" [0m
+  Rendered photos/index.html.erb within layouts/application (25.2ms)
+Compiled photos.css  (54ms)  (pid 4108)
+Compiled scaffolds.css  (34ms)  (pid 4108)
+Compiled application.css  (135ms)  (pid 4108)
+Compiled jquery.js  (15ms)  (pid 4108)
+Compiled jquery_ujs.js  (0ms)  (pid 4108)
+Compiled photos.js  (243ms)  (pid 4108)
+Compiled application.js  (448ms)  (pid 4108)
+Completed 200 OK in 885ms (Views: 792.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-04 22:21:28 -0800
+Served asset /application.css - 200 OK (44ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2012-12-04 22:21:28 -0800
+Served asset /photos.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-04 22:21:28 -0800
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-04 22:21:28 -0800
+Served asset /jquery.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-04 22:21:28 -0800
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2012-12-04 22:21:28 -0800
+Served asset /photos.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-04 22:21:28 -0800
+Served asset /application.js - 200 OK (9ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.8ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (533.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (310.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreatePhotos (20121205060253)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205060253')[0m
+  [1m[35m (397.4ms)[0m  commit transaction
+Migrating to CreateSlides (20121205063600)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "slides" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" integer, "photo_id" integer, "slideshow_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205063600')[0m
+  [1m[35m (402.3ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "photos"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (1, 'train.jpg', 'train_t.jpg', 'my ride to work', '2012-12-05 06:41:37', '2012-12-05 06:41:37')
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (2, 'lighthouse.jpg', 'lighthouse_t.jpg', 'I take dates here all the time', '2012-12-05 06:41:37', '2012-12-05 06:41:37')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (3, 'gargoyle.jpg', 'gargoyle_t.jpg', 'My paper weight', '2012-12-05 06:41:37', '2012-12-05 06:41:37')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (4, 'cat.jpg', 'cat_t.jpg', 'my pet', '2012-12-05 06:41:37', '2012-12-05 06:41:37')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (5, 'cappucino.jpg', 'cappfcino_t.jpg', 'life juice', '2012-12-05 06:41:37', '2012-12-05 06:41:37')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (6, 'building.jpg', 'building_t.jpg', 'my office', '2012-12-05 06:41:37', '2012-12-05 06:41:37')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (7, 'bridge.jpg', 'bridge_t.jpg', 'a place i''d like to visit', '2012-12-05 06:41:37', '2012-12-05 06:41:37')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (8, 'bear.jpg', 'bear_t.jpg', 'day at the zoo', '2012-12-05 06:41:37', '2012-12-05 06:41:37')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (9, 'baskets.jpg', 'baskets_t.jpg', 'where i store my fruit', '2012-12-05 06:41:37', '2012-12-05 06:41:37')
+  [1m[36m (341.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "slides"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow", "created_at", "updated_at") VALUES (1, 1, 1, 1, '2012-12-05 06:41:37', '2012-12-05 06:41:37')
+SQLite3::SQLException: table slides has no column named slideshow: INSERT INTO "slides" ("id", "position", "photo_id", "slideshow", "created_at", "updated_at") VALUES (1, 1, 1, 1, '2012-12-05 06:41:37', '2012-12-05 06:41:37')
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (489.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (317.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreatePhotos (20121205060253)
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205060253')[0m
+  [1m[35m (411.9ms)[0m  commit transaction
+Migrating to CreateSlides (20121205063600)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "slides" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" integer, "photo_id" integer, "slideshow_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205063600')[0m
+  [1m[35m (422.6ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "photos"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (1, 'train.jpg', 'train_t.jpg', 'my ride to work', '2012-12-05 06:43:20', '2012-12-05 06:43:20')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (2, 'lighthouse.jpg', 'lighthouse_t.jpg', 'I take dates here all the time', '2012-12-05 06:43:20', '2012-12-05 06:43:20')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (3, 'gargoyle.jpg', 'gargoyle_t.jpg', 'My paper weight', '2012-12-05 06:43:20', '2012-12-05 06:43:20')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (4, 'cat.jpg', 'cat_t.jpg', 'my pet', '2012-12-05 06:43:20', '2012-12-05 06:43:20')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (5, 'cappucino.jpg', 'cappfcino_t.jpg', 'life juice', '2012-12-05 06:43:20', '2012-12-05 06:43:20')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (6, 'building.jpg', 'building_t.jpg', 'my office', '2012-12-05 06:43:20', '2012-12-05 06:43:20')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (7, 'bridge.jpg', 'bridge_t.jpg', 'a place i''d like to visit', '2012-12-05 06:43:20', '2012-12-05 06:43:20')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (8, 'bear.jpg', 'bear_t.jpg', 'day at the zoo', '2012-12-05 06:43:20', '2012-12-05 06:43:20')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (9, 'baskets.jpg', 'baskets_t.jpg', 'where i store my fruit', '2012-12-05 06:43:20', '2012-12-05 06:43:20')
+  [1m[36m (304.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "slides"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (1, 1, 1, 1, '2012-12-05 06:43:21', '2012-12-05 06:43:21')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (2, 2, 2, 1, '2012-12-05 06:43:21', '2012-12-05 06:43:21')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (3, 3, 3, 1, '2012-12-05 06:43:21', '2012-12-05 06:43:21')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (4, 4, 4, 1, '2012-12-05 06:43:21', '2012-12-05 06:43:21')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (5, 5, 5, 1, '2012-12-05 06:43:21', '2012-12-05 06:43:21')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (6, 6, 6, 1, '2012-12-05 06:43:21', '2012-12-05 06:43:21')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (7, 7, 7, 1, '2012-12-05 06:43:21', '2012-12-05 06:43:21')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (8, 8, 8, 1, '2012-12-05 06:43:21', '2012-12-05 06:43:21')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (9, 9, 9, 1, '2012-12-05 06:43:21', '2012-12-05 06:43:21')
+  [1m[36m (333.3ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePhotos (20121205060253)
+Migrating to CreateSlides (20121205063600)
+Migrating to CreateSlideshows (20121205064406)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "slideshows" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205064406')[0m
+  [1m[35m (464.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/slides" for 127.0.0.1 at 2012-12-04 23:02:38 -0800
+Processing by SlidesController#index as HTML
+  Rendered slides/index.html.erb within layouts/application (48.6ms)
+Compiled slides.css  (7ms)  (pid 4356)
+Compiled slideshows.css  (1ms)  (pid 4356)
+Compiled application.css  (34ms)  (pid 4356)
+Compiled slides.js  (140ms)  (pid 4356)
+Compiled slideshows.js  (1ms)  (pid 4356)
+Compiled application.js  (200ms)  (pid 4356)
+Completed 200 OK in 559ms (Views: 454.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/slides/1" for 127.0.0.1 at 2012-12-04 23:03:19 -0800
+Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered slides/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 25ms (Views: 20.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/slides" for 127.0.0.1 at 2012-12-04 23:05:16 -0800
+Processing by SlidesController#create as HTML
+  Parameters: {"slide"=>{"position"=>"10", "photo_id"=>"1", "slideshow_id"=>"1"}}
+Redirected to http://www.example.com/slides/10
+Completed 302 Found in 536ms (ActiveRecord: 526.3ms)
+
+
+Started PUT "/slide/1" for 127.0.0.1 at 2012-12-04 23:06:30 -0800
+
+ActionController::RoutingError (No route matches [PUT] "/slide/1"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack-test (0.6.2) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.2) lib/rack/test.rb:230:in `process_request'
+  rack-test (0.6.2) lib/rack/test.rb:123:in `request'
+  actionpack (3.2.9) lib/action_dispatch/testing/integration.rb:299:in `process'
+  actionpack (3.2.9) lib/action_dispatch/testing/integration.rb:45:in `put'
+  (irb):8:in `irb_binding'
+  /usr/lib/ruby/1.9.1/irb/workspace.rb:80:in `eval'
+  /usr/lib/ruby/1.9.1/irb/workspace.rb:80:in `evaluate'
+  /usr/lib/ruby/1.9.1/irb/context.rb:254:in `evaluate'
+  /usr/lib/ruby/1.9.1/irb.rb:159:in `block (2 levels) in eval_input'
+  /usr/lib/ruby/1.9.1/irb.rb:273:in `signal_status'
+  /usr/lib/ruby/1.9.1/irb.rb:156:in `block in eval_input'
+  /usr/lib/ruby/1.9.1/irb/ruby-lex.rb:243:in `block (2 levels) in each_top_level_statement'
+  /usr/lib/ruby/1.9.1/irb/ruby-lex.rb:229:in `loop'
+  /usr/lib/ruby/1.9.1/irb/ruby-lex.rb:229:in `block in each_top_level_statement'
+  /usr/lib/ruby/1.9.1/irb/ruby-lex.rb:228:in `catch'
+  /usr/lib/ruby/1.9.1/irb/ruby-lex.rb:228:in `each_top_level_statement'
+  /usr/lib/ruby/1.9.1/irb.rb:155:in `eval_input'
+  /usr/lib/ruby/1.9.1/irb.rb:70:in `block in start'
+  /usr/lib/ruby/1.9.1/irb.rb:69:in `catch'
+  /usr/lib/ruby/1.9.1/irb.rb:69:in `start'
+  railties (3.2.9) lib/rails/commands/console.rb:47:in `start'
+  railties (3.2.9) lib/rails/commands/console.rb:8:in `start'
+  railties (3.2.9) lib/rails/commands.rb:41:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started PUT "/slides/1" for 127.0.0.1 at 2012-12-04 23:06:44 -0800
+Processing by SlidesController#update as HTML
+  Parameters: {"slide"=>{"position"=>"1", "photo_id"=>"1", "slideshow_id"=>"2"}, "id"=>"1"}
+Redirected to http://www.example.com/slides/1
+Completed 302 Found in 480ms (ActiveRecord: 469.7ms)
+
+
+Started DELETE "/slides/10" for 127.0.0.1 at 2012-12-04 23:07:17 -0800
+Processing by SlidesController#destroy as HTML
+  Parameters: {"id"=>"10"}
+Redirected to http://www.example.com/slides
+Completed 302 Found in 492ms (ActiveRecord: 485.3ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2012-12-04 23:12:30 -0800
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos" 
+  Rendered photos/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 69ms (Views: 51.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-04 23:12:31 -0800
+Served asset /application.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/slides.css?body=1" for 127.0.0.1 at 2012-12-04 23:12:31 -0800
+Served asset /slides.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-04 23:12:31 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2012-12-04 23:12:31 -0800
+Served asset /photos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-04 23:12:31 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slideshows.css?body=1" for 127.0.0.1 at 2012-12-04 23:12:31 -0800
+Served asset /slideshows.css - 200 OK (2ms)
+
+
+Started GET "/assets/slides.js?body=1" for 127.0.0.1 at 2012-12-04 23:12:31 -0800
+Served asset /slides.js - 200 OK (3ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2012-12-04 23:12:31 -0800
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-04 23:12:31 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slideshows.js?body=1" for 127.0.0.1 at 2012-12-04 23:12:31 -0800
+Served asset /slideshows.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-04 23:12:31 -0800
+Served asset /application.js - 304 Not Modified (34ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (500.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (355.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreatePhotos (20121205060253)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205060253')[0m
+  [1m[35m (426.4ms)[0m  commit transaction
+Migrating to CreateSlides (20121205063600)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "slides" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" integer, "photo_id" integer, "slideshow_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205063600')[0m
+  [1m[35m (417.1ms)[0m  commit transaction
+Migrating to CreateSlideshows (20121205064406)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "slideshows" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205064406')[0m
+  [1m[35m (360.4ms)[0m  commit transaction
+Migrating to CreateCategories (20121205075141)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205075141')[0m
+  [1m[35m (386.6ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "slideshows"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "slideshows" ("id", "name", "created_at", "updated_at") VALUES (1, 1, '2012-12-05 08:02:19', '2012-12-05 08:02:19')
+  [1m[36m (275.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "categories"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (1, 'All', '2012-12-05 08:02:19', '2012-12-05 08:02:19')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (2, 1, 'People', '2012-12-05 08:02:19', '2012-12-05 08:02:19')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (3, 1, 'Animals', '2012-12-05 08:02:19', '2012-12-05 08:02:19')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (4, 1, 'Places', '2012-12-05 08:02:19', '2012-12-05 08:02:19')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (5, 1, 'Things', '2012-12-05 08:02:19', '2012-12-05 08:02:19')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (6, 2, 'Friends', '2012-12-05 08:02:19', '2012-12-05 08:02:19')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (7, 2, 'Family', '2012-12-05 08:02:19', '2012-12-05 08:02:19')
+  [1m[36m (342.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "photos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (1, 'train.jpg', 'train_t.jpg', 'my ride to work', '2012-12-05 08:02:20', '2012-12-05 08:02:20')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (2, 'lighthouse.jpg', 'lighthouse_t.jpg', 'I take dates here all the time', '2012-12-05 08:02:20', '2012-12-05 08:02:20')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (3, 'gargoyle.jpg', 'gargoyle_t.jpg', 'My paper weight', '2012-12-05 08:02:20', '2012-12-05 08:02:20')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (4, 'cat.jpg', 'cat_t.jpg', 'my pet', '2012-12-05 08:02:20', '2012-12-05 08:02:20')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (5, 'cappucino.jpg', 'cappfcino_t.jpg', 'life juice', '2012-12-05 08:02:20', '2012-12-05 08:02:20')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (6, 'building.jpg', 'building_t.jpg', 'my office', '2012-12-05 08:02:20', '2012-12-05 08:02:20')[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (7, 'bridge.jpg', 'bridge_t.jpg', 'a place i''d like to visit', '2012-12-05 08:02:20', '2012-12-05 08:02:20')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (8, 'bear.jpg', 'bear_t.jpg', 'day at the zoo', '2012-12-05 08:02:20', '2012-12-05 08:02:20')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (9, 'baskets.jpg', 'baskets_t.jpg', 'where i store my fruit', '2012-12-05 08:02:20', '2012-12-05 08:02:20')
+  [1m[36m (254.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "slides"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (1, 1, 1, 1, '2012-12-05 08:02:20', '2012-12-05 08:02:20')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (2, 2, 2, 1, '2012-12-05 08:02:20', '2012-12-05 08:02:20')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (3, 3, 3, 1, '2012-12-05 08:02:20', '2012-12-05 08:02:20')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (4, 4, 4, 1, '2012-12-05 08:02:20', '2012-12-05 08:02:20')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (5, 5, 5, 1, '2012-12-05 08:02:20', '2012-12-05 08:02:20')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (6, 6, 6, 1, '2012-12-05 08:02:20', '2012-12-05 08:02:20')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (7, 7, 7, 1, '2012-12-05 08:02:20', '2012-12-05 08:02:20')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (8, 8, 8, 1, '2012-12-05 08:02:20', '2012-12-05 08:02:20')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (9, 9, 9, 1, '2012-12-05 08:02:20', '2012-12-05 08:02:20')
+  [1m[36m (263.3ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (320.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (310.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreatePhotos (20121205060253)
+  [1m[36m (1.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.5ms)[0m  CREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205060253')[0m
+  [1m[35m (382.8ms)[0m  commit transaction
+Migrating to CreateSlides (20121205063600)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.6ms)[0m  CREATE TABLE "slides" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" integer, "photo_id" integer, "slideshow_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205063600')[0m
+  [1m[35m (388.8ms)[0m  commit transaction
+Migrating to CreateSlideshows (20121205064406)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "slideshows" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205064406')[0m
+  [1m[35m (402.6ms)[0m  commit transaction
+Migrating to CreateCategories (20121205075141)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205075141')[0m
+  [1m[35m (327.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "slideshows"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "slideshows" ("id", "name", "created_at", "updated_at") VALUES (1, 1, '2012-12-05 08:52:09', '2012-12-05 08:52:09')
+  [1m[36m (707.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "categories"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (1, 'All', '2012-12-05 08:52:09', '2012-12-05 08:52:09')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (2, 1, 'People', '2012-12-05 08:52:09', '2012-12-05 08:52:09')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (3, 1, 'Animals', '2012-12-05 08:52:09', '2012-12-05 08:52:09')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (4, 1, 'Places', '2012-12-05 08:52:09', '2012-12-05 08:52:09')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (5, 1, 'Things', '2012-12-05 08:52:09', '2012-12-05 08:52:09')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (6, 2, 'Friends', '2012-12-05 08:52:09', '2012-12-05 08:52:09')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (7, 2, 'Family', '2012-12-05 08:52:09', '2012-12-05 08:52:09')
+  [1m[36m (416.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "photos"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (1, 'train.jpg', 'train_t.jpg', 'my ride to work', '2012-12-05 08:52:10', '2012-12-05 08:52:10')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (2, 'lighthouse.jpg', 'lighthouse_t.jpg', 'I take dates here all the time', '2012-12-05 08:52:10', '2012-12-05 08:52:10')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (3, 'gargoyle.jpg', 'gargoyle_t.jpg', 'My paper weight', '2012-12-05 08:52:10', '2012-12-05 08:52:10')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (4, 'cat.jpg', 'cat_t.jpg', 'my pet', '2012-12-05 08:52:10', '2012-12-05 08:52:10')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (5, 'cappucino.jpg', 'cappfcino_t.jpg', 'life juice', '2012-12-05 08:52:10', '2012-12-05 08:52:10')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (6, 'building.jpg', 'building_t.jpg', 'my office', '2012-12-05 08:52:10', '2012-12-05 08:52:10')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (7, 'bridge.jpg', 'bridge_t.jpg', 'a place i''d like to visit', '2012-12-05 08:52:10', '2012-12-05 08:52:10')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (8, 'bear.jpg', 'bear_t.jpg', 'day at the zoo', '2012-12-05 08:52:10', '2012-12-05 08:52:10')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (9, 'baskets.jpg', 'baskets_t.jpg', 'where i store my fruit', '2012-12-05 08:52:10', '2012-12-05 08:52:10')
+  [1m[36m (266.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.6ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "slides"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (1, 1, 1, 1, '2012-12-05 08:52:10', '2012-12-05 08:52:10')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (2, 2, 2, 1, '2012-12-05 08:52:10', '2012-12-05 08:52:10')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (3, 3, 3, 1, '2012-12-05 08:52:10', '2012-12-05 08:52:10')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (4, 4, 4, 1, '2012-12-05 08:52:10', '2012-12-05 08:52:10')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (5, 5, 5, 1, '2012-12-05 08:52:10', '2012-12-05 08:52:10')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (6, 6, 6, 1, '2012-12-05 08:52:10', '2012-12-05 08:52:10')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (7, 7, 7, 1, '2012-12-05 08:52:10', '2012-12-05 08:52:10')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (8, 8, 8, 1, '2012-12-05 08:52:10', '2012-12-05 08:52:10')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (9, 9, 9, 1, '2012-12-05 08:52:10', '2012-12-05 08:52:10')
+  [1m[36m (260.5ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePhotos (20121205060253)
+Migrating to CreateSlides (20121205063600)
+Migrating to CreateSlideshows (20121205064406)
+Migrating to CreateCategories (20121205075141)
+Migrating to CreatePeople (20121205092514)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "type" varchar(255), "email" varchar(255), "camera" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205092514')[0m
+  [1m[35m (603.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (440.4ms)[0m  DROP TABLE "people"
+  [1m[36m (388.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20121205092514'[0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePhotos (20121205060253)
+Migrating to CreateSlides (20121205063600)
+Migrating to CreateSlideshows (20121205064406)
+Migrating to CreateCategories (20121205075141)
+Migrating to CreatePeople (20121205092514)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "type" varchar(255), "email" varchar(255), "camera" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205092514')[0m
+  [1m[35m (466.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (416.1ms)[0m  DROP TABLE "people"
+  [1m[36m (312.8ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20121205092514'[0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePhotos (20121205060253)
+Migrating to CreateSlides (20121205063600)
+Migrating to CreateSlideshows (20121205064406)
+Migrating to CreateCategories (20121205075141)
+Migrating to CreatePeople (20121205092514)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "type" varchar(255), "email" varchar(255), "camera" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205092514')[0m
+  [1m[35m (584.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (369.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (399.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreatePhotos (20121205060253)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205060253')[0m
+  [1m[35m (429.7ms)[0m  commit transaction
+Migrating to CreateSlides (20121205063600)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "slides" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" integer, "photo_id" integer, "slideshow_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205063600')[0m
+  [1m[35m (378.0ms)[0m  commit transaction
+Migrating to CreateSlideshows (20121205064406)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "slideshows" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205064406')[0m
+  [1m[35m (413.5ms)[0m  commit transaction
+Migrating to CreateCategories (20121205075141)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205075141')[0m
+  [1m[35m (402.2ms)[0m  commit transaction
+Migrating to CreatePeople (20121205092514)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "type" varchar(255), "email" varchar(255), "camera" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205092514')[0m
+  [1m[35m (512.6ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "slideshows"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "slideshows" ("id", "name", "created_at", "updated_at") VALUES (1, 1, '2012-12-05 09:42:39', '2012-12-05 09:42:39')
+  [1m[36m (297.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "categories"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (1, 'All', '2012-12-05 09:42:39', '2012-12-05 09:42:39')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (2, 1, 'People', '2012-12-05 09:42:39', '2012-12-05 09:42:39')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (3, 1, 'Animals', '2012-12-05 09:42:39', '2012-12-05 09:42:39')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (4, 1, 'Places', '2012-12-05 09:42:39', '2012-12-05 09:42:39')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (5, 1, 'Things', '2012-12-05 09:42:39', '2012-12-05 09:42:39')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (6, 2, 'Friends', '2012-12-05 09:42:39', '2012-12-05 09:42:39')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (7, 2, 'Family', '2012-12-05 09:42:39', '2012-12-05 09:42:39')
+  [1m[36m (427.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "people"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "people" ("created_at", "updated_at", "id") VALUES ('2012-12-05 09:42:40', '2012-12-05 09:42:40', 980190962)
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "people" ("created_at", "updated_at", "id") VALUES ('2012-12-05 09:42:40', '2012-12-05 09:42:40', 298486374)[0m
+  [1m[35m (268.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "photos"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (1, 'train.jpg', 'train_t.jpg', 'my ride to work', '2012-12-05 09:42:40', '2012-12-05 09:42:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (2, 'lighthouse.jpg', 'lighthouse_t.jpg', 'I take dates here all the time', '2012-12-05 09:42:40', '2012-12-05 09:42:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (3, 'gargoyle.jpg', 'gargoyle_t.jpg', 'My paper weight', '2012-12-05 09:42:40', '2012-12-05 09:42:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (4, 'cat.jpg', 'cat_t.jpg', 'my pet', '2012-12-05 09:42:40', '2012-12-05 09:42:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (5, 'cappucino.jpg', 'cappfcino_t.jpg', 'life juice', '2012-12-05 09:42:40', '2012-12-05 09:42:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (6, 'building.jpg', 'building_t.jpg', 'my office', '2012-12-05 09:42:40', '2012-12-05 09:42:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (7, 'bridge.jpg', 'bridge_t.jpg', 'a place i''d like to visit', '2012-12-05 09:42:40', '2012-12-05 09:42:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (8, 'bear.jpg', 'bear_t.jpg', 'day at the zoo', '2012-12-05 09:42:40', '2012-12-05 09:42:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (9, 'baskets.jpg', 'baskets_t.jpg', 'where i store my fruit', '2012-12-05 09:42:40', '2012-12-05 09:42:40')[0m
+  [1m[35m (274.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "slides"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (1, 1, 1, 1, '2012-12-05 09:42:40', '2012-12-05 09:42:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (2, 2, 2, 1, '2012-12-05 09:42:40', '2012-12-05 09:42:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (3, 3, 3, 1, '2012-12-05 09:42:40', '2012-12-05 09:42:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (4, 4, 4, 1, '2012-12-05 09:42:40', '2012-12-05 09:42:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (5, 5, 5, 1, '2012-12-05 09:42:40', '2012-12-05 09:42:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (6, 6, 6, 1, '2012-12-05 09:42:40', '2012-12-05 09:42:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (7, 7, 7, 1, '2012-12-05 09:42:40', '2012-12-05 09:42:40')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (8, 8, 8, 1, '2012-12-05 09:42:40', '2012-12-05 09:42:40')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (9, 9, 9, 1, '2012-12-05 09:42:40', '2012-12-05 09:42:40')[0m
+  [1m[35m (483.6ms)[0m  commit transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePhotos (20121205060253)
+Migrating to CreateSlides (20121205063600)
+Migrating to CreateSlideshows (20121205064406)
+Migrating to CreateCategories (20121205075141)
+Migrating to CreatePeople (20121205092514)
+Migrating to AddAddressToPerson (20121205095115)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "people" ADD "street_address" varchar(255)
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "people" ADD "city" varchar(255)[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "people" ADD "state" varchar(255)
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "people" ADD "zip" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121205095115')
+  [1m[36m (437.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (27.7ms)[0m  CREATE TEMPORARY TABLE "altered_people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "type" varchar(255), "email" varchar(255), "camera" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "street_address" varchar(255), "city" varchar(255), "state" varchar(255), "zip" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "people"[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "altered_people" ("id","name","type","email","camera","created_at","updated_at","street_address","city","state","zip") VALUES (298486374, NULL, NULL, NULL, NULL, '2012-12-05 09:42:40', '2012-12-05 09:42:40', NULL, NULL, NULL, NULL)
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "altered_people" ("id","name","type","email","camera","created_at","updated_at","street_address","city","state","zip") VALUES (980190962, NULL, NULL, NULL, NULL, '2012-12-05 09:42:40', '2012-12-05 09:42:40', NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "altered_people" ("id","name","type","email","camera","created_at","updated_at","street_address","city","state","zip") VALUES (980190963, 'bruce', NULL, 'b@t.com', NULL, '2012-12-05 09:46:53.914110', '2012-12-05 09:46:53.914110', NULL, NULL, NULL, NULL)
+  [1m[36m (0.8ms)[0m  [1mDROP TABLE "people"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "type" varchar(255), "email" varchar(255), "camera" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "street_address" varchar(255), "city" varchar(255), "state" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "altered_people"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "people" ("id","name","type","email","camera","created_at","updated_at","street_address","city","state") VALUES (298486374, NULL, NULL, NULL, NULL, '2012-12-05 09:42:40', '2012-12-05 09:42:40', NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "people" ("id","name","type","email","camera","created_at","updated_at","street_address","city","state") VALUES (980190962, NULL, NULL, NULL, NULL, '2012-12-05 09:42:40', '2012-12-05 09:42:40', NULL, NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "people" ("id","name","type","email","camera","created_at","updated_at","street_address","city","state") VALUES (980190963, 'bruce', NULL, 'b@t.com', NULL, '2012-12-05 09:46:53.914110', '2012-12-05 09:46:53.914110', NULL, NULL, NULL)
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "altered_people"[0m
+  [1m[35m (568.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE TEMPORARY TABLE "altered_people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "type" varchar(255), "email" varchar(255), "camera" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "street_address" varchar(255), "city" varchar(255), "state" varchar(255)) 
+  [1m[36m (0.5ms)[0m  [1mSELECT * FROM "people"[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "altered_people" ("id","name","type","email","camera","created_at","updated_at","street_address","city","state") VALUES (298486374, NULL, NULL, NULL, NULL, '2012-12-05 09:42:40', '2012-12-05 09:42:40', NULL, NULL, NULL)
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "altered_people" ("id","name","type","email","camera","created_at","updated_at","street_address","city","state") VALUES (980190962, NULL, NULL, NULL, NULL, '2012-12-05 09:42:40', '2012-12-05 09:42:40', NULL, NULL, NULL)[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "altered_people" ("id","name","type","email","camera","created_at","updated_at","street_address","city","state") VALUES (980190963, 'bruce', NULL, 'b@t.com', NULL, '2012-12-05 09:46:53.914110', '2012-12-05 09:46:53.914110', NULL, NULL, NULL)
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "people"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "type" varchar(255), "email" varchar(255), "camera" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "street_address" varchar(255), "city" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "altered_people"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "people" ("id","name","type","email","camera","created_at","updated_at","street_address","city") VALUES (298486374, NULL, NULL, NULL, NULL, '2012-12-05 09:42:40', '2012-12-05 09:42:40', NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "people" ("id","name","type","email","camera","created_at","updated_at","street_address","city") VALUES (980190962, NULL, NULL, NULL, NULL, '2012-12-05 09:42:40', '2012-12-05 09:42:40', NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "people" ("id","name","type","email","camera","created_at","updated_at","street_address","city") VALUES (980190963, 'bruce', NULL, 'b@t.com', NULL, '2012-12-05 09:46:53.914110', '2012-12-05 09:46:53.914110', NULL, NULL)
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "altered_people"[0m
+  [1m[35m (431.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.6ms)[0m  CREATE TEMPORARY TABLE "altered_people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "type" varchar(255), "email" varchar(255), "camera" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "street_address" varchar(255), "city" varchar(255)) 
+  [1m[36m (0.5ms)[0m  [1mSELECT * FROM "people"[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "altered_people" ("id","name","type","email","camera","created_at","updated_at","street_address","city") VALUES (298486374, NULL, NULL, NULL, NULL, '2012-12-05 09:42:40', '2012-12-05 09:42:40', NULL, NULL)
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "altered_people" ("id","name","type","email","camera","created_at","updated_at","street_address","city") VALUES (980190962, NULL, NULL, NULL, NULL, '2012-12-05 09:42:40', '2012-12-05 09:42:40', NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_people" ("id","name","type","email","camera","created_at","updated_at","street_address","city") VALUES (980190963, 'bruce', NULL, 'b@t.com', NULL, '2012-12-05 09:46:53.914110', '2012-12-05 09:46:53.914110', NULL, NULL)
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "people"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "type" varchar(255), "email" varchar(255), "camera" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "street_address" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "altered_people"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "people" ("id","name","type","email","camera","created_at","updated_at","street_address") VALUES (298486374, NULL, NULL, NULL, NULL, '2012-12-05 09:42:40', '2012-12-05 09:42:40', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "people" ("id","name","type","email","camera","created_at","updated_at","street_address") VALUES (980190962, NULL, NULL, NULL, NULL, '2012-12-05 09:42:40', '2012-12-05 09:42:40', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "people" ("id","name","type","email","camera","created_at","updated_at","street_address") VALUES (980190963, 'bruce', NULL, 'b@t.com', NULL, '2012-12-05 09:46:53.914110', '2012-12-05 09:46:53.914110', NULL)
+  [1m[36m (0.8ms)[0m  [1mDROP TABLE "altered_people"[0m
+  [1m[35m (296.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TEMPORARY TABLE "altered_people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "type" varchar(255), "email" varchar(255), "camera" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "street_address" varchar(255)) 
+  [1m[36m (0.4ms)[0m  [1mSELECT * FROM "people"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "altered_people" ("id","name","type","email","camera","created_at","updated_at","street_address") VALUES (298486374, NULL, NULL, NULL, NULL, '2012-12-05 09:42:40', '2012-12-05 09:42:40', NULL)
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "altered_people" ("id","name","type","email","camera","created_at","updated_at","street_address") VALUES (980190962, NULL, NULL, NULL, NULL, '2012-12-05 09:42:40', '2012-12-05 09:42:40', NULL)[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "altered_people" ("id","name","type","email","camera","created_at","updated_at","street_address") VALUES (980190963, 'bruce', NULL, 'b@t.com', NULL, '2012-12-05 09:46:53.914110', '2012-12-05 09:46:53.914110', NULL)
+  [1m[36m (3.5ms)[0m  [1mDROP TABLE "people"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "type" varchar(255), "email" varchar(255), "camera" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "altered_people"[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "people" ("id","name","type","email","camera","created_at","updated_at") VALUES (298486374, NULL, NULL, NULL, NULL, '2012-12-05 09:42:40', '2012-12-05 09:42:40')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "people" ("id","name","type","email","camera","created_at","updated_at") VALUES (980190962, NULL, NULL, NULL, NULL, '2012-12-05 09:42:40', '2012-12-05 09:42:40')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "people" ("id","name","type","email","camera","created_at","updated_at") VALUES (980190963, 'bruce', NULL, 'b@t.com', NULL, '2012-12-05 09:46:53.914110', '2012-12-05 09:46:53.914110')
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "altered_people"[0m
+  [1m[35m (310.5ms)[0m  commit transaction
+  [1m[36m (479.8ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20121205095115'[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (502.1ms)[0m  [1mALTER TABLE "people" ADD "street_address" varchar(255)[0m
+  [1m[35m (371.2ms)[0m  ALTER TABLE "people" ADD "city" varchar(255)
+  [1m[36m (460.9ms)[0m  [1mALTER TABLE "people" ADD "state" varchar(255)[0m
+  [1m[35m (314.3ms)[0m  ALTER TABLE "people" ADD "zip" varchar(255)
+  [1m[36m (331.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205095115')[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (378.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (321.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreatePhotos (20121205060253)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "filename" varchar(255), "thumbnail" varchar(255), "description" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205060253')[0m
+  [1m[35m (386.1ms)[0m  commit transaction
+Migrating to CreateSlides (20121205063600)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "slides" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "position" integer, "photo_id" integer, "slideshow_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205063600')[0m
+  [1m[35m (448.2ms)[0m  commit transaction
+Migrating to CreateSlideshows (20121205064406)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "slideshows" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205064406')[0m
+  [1m[35m (391.4ms)[0m  commit transaction
+Migrating to CreateCategories (20121205075141)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205075141')[0m
+  [1m[35m (403.0ms)[0m  commit transaction
+Migrating to CreatePeople (20121205092514)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "type" varchar(255), "email" varchar(255), "camera" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121205092514')[0m
+  [1m[35m (435.4ms)[0m  commit transaction
+Migrating to AddAddressToPerson (20121205095115)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "people" ADD "street_address" varchar(255)
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "people" ADD "city" varchar(255)[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "people" ADD "state" varchar(255)
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "people" ADD "zip" varchar(255)[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121205095115')
+  [1m[36m (344.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "slideshows"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "slideshows" ("id", "name", "created_at", "updated_at") VALUES (1, 1, '2012-12-05 10:08:01', '2012-12-05 10:08:01')[0m
+  [1m[35m (344.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("id", "name", "created_at", "updated_at") VALUES (1, 'All', '2012-12-05 10:08:02', '2012-12-05 10:08:02')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (2, 1, 'People', '2012-12-05 10:08:02', '2012-12-05 10:08:02')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (3, 1, 'Animals', '2012-12-05 10:08:02', '2012-12-05 10:08:02')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (4, 1, 'Places', '2012-12-05 10:08:02', '2012-12-05 10:08:02')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (5, 1, 'Things', '2012-12-05 10:08:02', '2012-12-05 10:08:02')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (6, 2, 'Friends', '2012-12-05 10:08:02', '2012-12-05 10:08:02')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("id", "parent_id", "name", "created_at", "updated_at") VALUES (7, 2, 'Family', '2012-12-05 10:08:02', '2012-12-05 10:08:02')[0m
+  [1m[35m (255.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "people"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "people" ("created_at", "updated_at", "id") VALUES ('2012-12-05 10:08:02', '2012-12-05 10:08:02', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "people" ("created_at", "updated_at", "id") VALUES ('2012-12-05 10:08:02', '2012-12-05 10:08:02', 298486374)
+  [1m[36m (259.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "photos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (1, 'train.jpg', 'train_t.jpg', 'my ride to work', '2012-12-05 10:08:02', '2012-12-05 10:08:02')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (2, 'lighthouse.jpg', 'lighthouse_t.jpg', 'I take dates here all the time', '2012-12-05 10:08:02', '2012-12-05 10:08:02')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (3, 'gargoyle.jpg', 'gargoyle_t.jpg', 'My paper weight', '2012-12-05 10:08:02', '2012-12-05 10:08:02')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (4, 'cat.jpg', 'cat_t.jpg', 'my pet', '2012-12-05 10:08:02', '2012-12-05 10:08:02')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (5, 'cappucino.jpg', 'cappfcino_t.jpg', 'life juice', '2012-12-05 10:08:02', '2012-12-05 10:08:02')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (6, 'building.jpg', 'building_t.jpg', 'my office', '2012-12-05 10:08:02', '2012-12-05 10:08:02')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (7, 'bridge.jpg', 'bridge_t.jpg', 'a place i''d like to visit', '2012-12-05 10:08:02', '2012-12-05 10:08:02')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (8, 'bear.jpg', 'bear_t.jpg', 'day at the zoo', '2012-12-05 10:08:02', '2012-12-05 10:08:02')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "photos" ("id", "filename", "thumbnail", "description", "created_at", "updated_at") VALUES (9, 'baskets.jpg', 'baskets_t.jpg', 'where i store my fruit', '2012-12-05 10:08:02', '2012-12-05 10:08:02')
+  [1m[36m (389.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "slides"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (1, 1, 1, 1, '2012-12-05 10:08:03', '2012-12-05 10:08:03')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (2, 2, 2, 1, '2012-12-05 10:08:03', '2012-12-05 10:08:03')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (3, 3, 3, 1, '2012-12-05 10:08:03', '2012-12-05 10:08:03')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (4, 4, 4, 1, '2012-12-05 10:08:03', '2012-12-05 10:08:03')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (5, 5, 5, 1, '2012-12-05 10:08:03', '2012-12-05 10:08:03')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (6, 6, 6, 1, '2012-12-05 10:08:03', '2012-12-05 10:08:03')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (7, 7, 7, 1, '2012-12-05 10:08:03', '2012-12-05 10:08:03')
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (8, 8, 8, 1, '2012-12-05 10:08:03', '2012-12-05 10:08:03')[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "slides" ("id", "position", "photo_id", "slideshow_id", "created_at", "updated_at") VALUES (9, 9, 9, 1, '2012-12-05 10:08:03', '2012-12-05 10:08:03')
+  [1m[36m (271.4ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/photos" for 127.0.0.1 at 2012-12-05 02:37:10 -0800
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" [0m
+  Rendered photos/index.html.erb within layouts/application (12.2ms)
+Compiled categories.css  (7ms)  (pid 4108)
+Compiled application.css  (28ms)  (pid 4108)
+Compiled categories.js  (2ms)  (pid 4108)
+Compiled application.js  (20ms)  (pid 4108)
+Completed 200 OK in 244ms (Views: 229.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-05 02:37:10 -0800
+Served asset /application.css - 304 Not Modified (39ms)
+
+
+Started GET "/assets/slideshows.css?body=1" for 127.0.0.1 at 2012-12-05 02:37:10 -0800
+Served asset /slideshows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slides.css?body=1" for 127.0.0.1 at 2012-12-05 02:37:10 -0800
+Served asset /slides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-05 02:37:10 -0800
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2012-12-05 02:37:10 -0800
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2012-12-05 02:37:10 -0800
+Served asset /categories.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-05 02:37:10 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-05 02:37:10 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2012-12-05 02:37:10 -0800
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2012-12-05 02:37:10 -0800
+Served asset /categories.js - 200 OK (1ms)
+
+
+Started GET "/assets/slides.js?body=1" for 127.0.0.1 at 2012-12-05 02:37:10 -0800
+Served asset /slides.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slideshows.js?body=1" for 127.0.0.1 at 2012-12-05 02:37:10 -0800
+Served asset /slideshows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-05 02:37:10 -0800
+Served asset /application.js - 304 Not Modified (22ms)
