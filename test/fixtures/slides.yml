@@ -6,4 +6,6 @@ slide_<%= i %>:
   position: <%= i %>
   photo_id: <%= i %>
   slideshow_id: 1
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
 <% end %>

@@ -2,12 +2,12 @@ class CategoriesController < ApplicationController
   # GET /categories
   # GET /categories.json
   def index
-    @categories = Category.all
+    @categories = Category.find(:all, :order=>'name')
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @categories }
-    end
+    #respond_to do |format|
+    #  format.html # index.html.erb
+    #  format.json { render json: @categories }
+    #end
   end
 
   # GET /categories/1

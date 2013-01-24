@@ -1,35 +1,40 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+defaults: &defaults
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
 
 category_1:
   id: 1
+  parent_id: nil
   name: All
-
+  <<: *defaults
 category_2:
   id: 2
   parent_id: 1
   name: People
-
+  <<: *defaults
 category_3:
   id: 3
   parent_id: 1
   name: Animals
-
+  <<: *defaults
 category_4:
   id: 4
   parent_id: 1
   name: Places
-
+  <<: *defaults
 category_5:
   id: 5
   parent_id: 1
   name: Things
-
+  <<: *defaults
 category_6:
   id: 6
   parent_id: 2
   name: Friends
-
+  <<: *defaults
 category_7:
   id: 7
   parent_id: 2
   name: Family
+  <<: *defaults

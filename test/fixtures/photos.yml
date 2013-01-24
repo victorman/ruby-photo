@@ -27,7 +27,7 @@ photo_4:
 photo_5:
   id: 5
   filename: cappucino.jpg
-  thumbnail: cappfcino_t.jpg
+  thumbnail: cappucino_t.jpg
   description: life juice
 
 photo_6:
